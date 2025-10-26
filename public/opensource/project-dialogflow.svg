@@ -1,0 +1,7 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="400" height="300" rx="12" fill="#e0e7ff"/>
+<circle cx="200" cy="140" r="50" fill="#818cf8"/>
+<path d="M180 140C180 131.716 186.716 125 195 125H205C213.284 125 220 131.716 220 140V140C220 148.284 213.284 155 205 155H195C186.716 155 180 148.284 180 140V140Z" fill="white"/>
+<path d="M190 165L190 140" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<text x="200" y="240" font-family="Arial, sans-serif" font-size="24" fill="#3730a3" text-anchor="middle" font-weight="bold">DialogFlow Chatbot</text>
+</svg>
