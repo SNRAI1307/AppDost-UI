@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AppDost UI - Creative Agency Website Rebuild
 
-## Getting Started
+This project is a modern rebuild of a digital agency website, created using Next.js and styled with Tailwind CSS and shadcn/ui. It features various sections commonly found on agency sites, including services, portfolio, blog, and contact pages, along with animations using Framer Motion.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Multi-Page Structure:** Includes Homepage, Services, Portfolio, Careers, Blog, and Contact pages.
+* **Modern UI:** Built with shadcn/ui components and styled with Tailwind CSS.
+* **Animations:** Uses Framer Motion for preloader, scroll-based fade-ins, and hover effects.
+* **Responsive Design:** Adapts to different screen sizes.
+* **Component-Based:** Organized into reusable React components.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Tech Stack
 
-## Learn More
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Icons:** [Lucide React](https://lucide.dev/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* [Node.js](https://nodejs.org/) (Version 18.x or later recommended)
+* [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    cd YOUR_REPO_NAME
+    ```
+    *(Replace `YOUR_USERNAME/YOUR_REPO_NAME` with your actual GitHub repo details)*
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    # yarn install
+    ```
+
+### Running the Development Server
+
+1.  **Start the server:**
+    ```bash
+    npm run dev
+    # or
+    # yarn dev
+    ```
+
+2.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. 🔥
+
+---
+
+## 🚢 Deployment
+
+This project is optimized for deployment on [Vercel](https://vercel.com/), the platform created by the makers of Next.js.
+
+1.  Push your code to a Git repository (GitHub, GitLab, Bitbucket).
+2.  Import the project into Vercel.
+3.  Vercel will automatically detect the Next.js framework, build your project, and deploy it. No special configuration is usually needed.
+
+---
