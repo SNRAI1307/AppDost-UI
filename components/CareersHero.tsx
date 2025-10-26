@@ -1,4 +1,3 @@
-// components/CareersHero.tsx
 "use client";
 
 export const CareersHero = () => {

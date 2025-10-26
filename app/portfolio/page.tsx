@@ -1,6 +1,5 @@
-// app/portfolio/page.tsx
 "use client";
-import { useState } from "react"; // Need state for filtering
+import { useState } from "react"; 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
@@ -8,35 +7,32 @@ import { PortfolioHero } from "@/components/PortfolioHero";
 import { ProjectFilters } from "@/components/ProjectFilters";
 import { ProjectCard, type Project } from "@/components/ProjectCard"; // Import type
 
-// --- Define ALL your projects here ---
-// Add more projects to this array as needed
 const allProjects: Project[] = [
  {
     title: "BEU Mate - Bihar Engineering",
     desc: "An AI-powered study companion for B.Tech students offering personalized learning, career guidance, and placement preparation. Available as both web ap...",
     imgSrc: "/projects/project-beu-mate.svg",
-    category: "Mobile Apps", // For filtering
-    displayCategory: "AI-Powered Educational Platform", // For display
+    category: "Mobile Apps", 
+    displayCategory: "AI-Powered Educational Platform", 
     tags: ["React Native", "Node.js", "AI/ML", "Firebase", "MongoDB"],
-    // links: [...] // Kept original structure, though button changed
   },
   {
     title: "Devskillquest",
     desc: "An interactive learning platform designed for aspiring developers to master coding skills through hands-on projects, coding challenges, and industry-r...",
     imgSrc: "/projects/project-devskillquest.svg",
-    category: "Web Development", // For filtering
-    displayCategory: "Educational Platform", // For display
+    category: "Web Development", 
+    displayCategory: "Educational Platform", 
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Redis", "WebSocket"],
   },
   {
     title: "The Weddings Chapter",
     desc: "A premium wedding planning platform connecting couples with top vendors, venues, and services. Features vendor portfolios, booking management, budget ...",
     imgSrc: "/projects/project-weddings.svg",
-    category: "Web Development", // For filtering
+    category: "Web Development", 
     displayCategory: "Wedding Planning Portal", // For display
     tags: ["PHP", "Laravel", "MySQL", "Vue.js", "Google Maps API"],
   },
-   // --- Add more projects below ---
+   
   {
     title: "E-commerce Store",
     desc: "Scalable online store with product management, user accounts, and secure checkout, built for high traffic.",
@@ -53,15 +49,14 @@ const allProjects: Project[] = [
     displayCategory: "Mobile App Redesign",
     tags: ["Figma", "User Research", "Prototyping"],
   },
-  // Add more...
+  
 ];
-// --- End project data ---
 
 
 export default function PortfolioPage() {
   const [currentFilter, setCurrentFilter] = useState("All Projects");
 
-  // Filter the projects based on the current selection
+  
   const filteredProjects = currentFilter === "All Projects"
     ? allProjects
     : allProjects.filter(project => project.category === currentFilter);
@@ -73,10 +68,10 @@ export default function PortfolioPage() {
         <PortfolioHero />
         <ProjectFilters
           selectedFilter={currentFilter}
-          onFilterChange={setCurrentFilter} // Pass the state setter function
+          onFilterChange={setCurrentFilter} 
         />
 
-        {/* Project Grid Section */}
+        
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
           {filteredProjects.length > 0 ? (
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -90,7 +85,7 @@ export default function PortfolioPage() {
             </div>
           )}
         </section>
-        {/* You might want to add a CTA section here as well */}
+        
       </main>
       <Footer />
       <WhatsAppWidget />

@@ -1,4 +1,4 @@
-// appdost-ui/components/BlogHero.tsx
+
 "use client";
 import { FileText } from "lucide-react";
 

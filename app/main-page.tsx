@@ -1,4 +1,3 @@
-// appdost-ui/app/main-page.tsx
 import { Hero } from "@/components/Hero";
 import { Stats } from "@/components/Stats";
 import { Services } from "@/components/Services";
@@ -11,24 +10,24 @@ import { OpenSourceProjects } from "@/components/OpenSourceProjects";
 import { Technologies } from "@/components/Technologies";
 import { Blog } from "@/components/Blog";
 import { CTA } from "@/components/CTA";
-import { WhatWeDo } from "@/components/WhatWeDo"; // Import the new component
+import { WhatWeDo } from "@/components/WhatWeDo"; 
 
 export default function MainPage() {
   return (
     <main>
-      {/* Hero is not animated, it animates its own content */}
+      
       <Hero />
 
       <AnimatedSection>
         <Stats />
       </AnimatedSection>
       
-      {/* This is the new "What We Do" section */}
+      
       <AnimatedSection>
         <WhatWeDo />
       </AnimatedSection>
 
-      {/* This is the "Our Services" section */}
+      
       <AnimatedSection>
         <Services />
       </AnimatedSection>
@@ -41,7 +40,7 @@ export default function MainPage() {
         <WorkCulture />
       </AnimatedSection>
 
-      {/* DevelopmentProcess has its own background, so no AnimatedSection */}
+      
       <DevelopmentProcess />
 
       <AnimatedSection>
@@ -60,7 +59,7 @@ export default function MainPage() {
         <Blog />
       </AnimatedSection>
 
-      {/* CTA has its own background, so no AnimatedSection */}
+      
       <CTA />
     </main>
   );

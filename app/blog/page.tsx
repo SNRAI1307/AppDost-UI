@@ -1,12 +1,9 @@
-// app/blog/page.tsx
 "use client";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
-import { BlogHero } from "@/components/BlogHero"; // We will create this
-import { BlogPostCard } from "@/components/BlogPostCard"; // We will create this
-
-// Dummy data for the blog posts
+import { BlogHero } from "@/components/BlogHero"; 
+import { BlogPostCard } from "@/components/BlogPostCard"; 
 const blogPosts = [
   {
     title: "TestDisabled This account doesn't meet our policy...",
@@ -14,7 +11,7 @@ const blogPosts = [
     category: "DESIGN",
     author: "AppDost Team",
     date: "Oct 12, 2025",
-    imgSrc: "/blog/placeholder-article.svg", // Use the placeholder you already have
+    imgSrc: "/blog/placeholder-article.svg", 
     link: "#",
   },
   {
@@ -35,7 +32,7 @@ const blogPosts = [
     imgSrc: "/blog/placeholder-article.svg",
     link: "#",
   },
-  // Add 6 more posts here to make a grid of 9, for example
+  
 ];
 
 export default function BlogPage() {
@@ -43,10 +40,9 @@ export default function BlogPage() {
     <>
       <Navbar />
       <main className="pt-20">
-        {/* 1. The purple header section */}
+        
         <BlogHero />
 
-        {/* 2. The grid of blog post cards */}
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (

@@ -1,4 +1,3 @@
-// app/contact/page.tsx
 "use client";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -19,7 +18,7 @@ export default function ContactPage() {
       <main className="pt-20">
         <ContactHero />
         <ContactDetails />
-        <ContactFormSection /> {/* Contains the form and office details side-by-side */}
+        <ContactFormSection /> 
         <FaqSection />
         <ContactWhyChooseUs />
         <OfficeLocations />

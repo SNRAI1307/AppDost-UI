@@ -1,4 +1,3 @@
-// appdost-ui/components/Blog.tsx
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -6,8 +5,7 @@ import Link from "next/link";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"; // Removed AvatarImage as it wasn't used
 import { Clock } from "lucide-react";
 
-// REMINDER: Make sure you ran this command:
-// npx shadcn-ui@latest add avatar
+
 
 export const Blog = () => {
   return (
@@ -25,7 +23,7 @@ export const Blog = () => {
         </p>
       </div>
 
-      {/* This just shows one placeholder card as seen in the video */}
+      
       <div className="flex justify-center">
         <Card className="max-w-md overflow-hidden group rounded-2xl shadow-lg">
           <CardContent className="p-0">
@@ -46,7 +44,7 @@ export const Blog = () => {
                 <Clock className="w-3 h-3" /> 12 min
               </span>
             </div>
-            {/* Corrected apostrophe encoding */}
+            
             <h3 className="text-xl font-semibold my-2">
               TestDisabled This account doesn&apos;t meet our policy...
             </h3>
