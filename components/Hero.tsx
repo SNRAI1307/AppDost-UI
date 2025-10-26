@@ -4,7 +4,8 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
-import { Monitor, Smartphone, Zap, Rocket } from "lucide-react"; // Import Rocket
+// Import CheckCircle, ShieldCheck, Clock for the new row
+import { Monitor, Smartphone, Zap, Rocket, CheckCircle, ShieldCheck, Clock } from "lucide-react";
 
 // This is the sub-component for the floating cards
 const FloatingCard = ({
@@ -49,6 +50,14 @@ const FloatingCard = ({
 );
 
 export const Hero = () => {
+  // --- ADDED: Data for the satisfaction row ---
+  const satisfactionItems = [
+    { icon: CheckCircle, text: "100% Client Satisfaction" },
+    { icon: ShieldCheck, text: "Secure & Scalable" },
+    { icon: Clock, text: "24/7 Support" },
+  ];
+  // --- END ADDED DATA ---
+
   return (
     <section
       id="home"
@@ -76,6 +85,8 @@ export const Hero = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            // --- UPDATED --- Added padding bottom for overlap
+            className="pb-16 md:pb-24" // Adjust as needed
           >
             <span className="inline-flex items-center gap-2 font-semibold text-primary uppercase bg-purple-100 px-3 py-1 rounded-full text-sm">
               <Rocket className="w-4 h-4" />
@@ -91,7 +102,8 @@ export const Hero = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Your trusted partner for comprehensive IT solutions. From mobile apps to enterprise software, we bring innovation and excellence to every project with our expert team of developers.
             </p>
-            <div className="flex flex-wrap gap-4">
+            {/* --- UPDATED --- Added margin bottom to button container */}
+            <div className="flex flex-wrap gap-4 mb-8">
               <Button asChild size="lg" className="rounded-full shadow-lg bg-gradient-to-r from-primary to-blue-600 text-white">
                 <Link href="/services">Explore Our Services &rarr;</Link>
               </Button>
@@ -99,6 +111,18 @@ export const Hero = () => {
                 <Link href="/contact">Get Free Consultation</Link>
               </Button>
             </div>
+
+            {/* --- ADDED Satisfaction Row --- */}
+            <div className="flex flex-wrap gap-4 justify-start">
+              {satisfactionItems.map((item) => (
+                <div key={item.text} className="flex items-center gap-2 bg-gray-100/70 px-3 py-1.5 rounded-full shadow-sm">
+                  <item.icon className="w-4 h-4 text-green-600" />
+                  <span className="text-xs font-medium text-muted-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
+            {/* --- END ADDED Row --- */}
+
           </motion.div>
 
           {/* Right Side: Floating Cards */}
